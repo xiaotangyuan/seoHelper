@@ -1,5 +1,4 @@
-
-chrome.contextMenus.create({'title':"本站SEO查询","onclick":keyOnclick}, function(){
+chrome.contextMenus.create({'title':"本站seo查询(名榜SEO助手)","onclick":keyOnclick}, function(){
 		  if (chrome.extension.lastError) {
 		    console.log("Got expected error: " + chrome.extension.lastError.message);
 			}
