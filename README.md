@@ -1,7 +1,12 @@
-seoHelper
+##seoHelper
 =========
 
 名榜seo助手,a chrome extension for seoer.
-<br><h3>1 点击下面的链接下载crx文件</h3>
+#1 点击下面的链接下载crx文件
 https://github.com/xiaotangyuan/seoHelper/blob/master/seoHelper.crx?raw=true
-<h3>2 将下载后的crx文件拖放至浏览器中</h3>
+#2 安装
+* 谷歌浏览器：打开chrome://extensions/，将crx文件拖入打开的扩展程序管理页面
+* 360极速浏览器：>直接将crx文件拖入浏览器中。
+
+#3 使用
+  在打开的网站中>>右键点击>名榜seo助手
