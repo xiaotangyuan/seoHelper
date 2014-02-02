@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/search.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+<title>  网站查询	</title>
+</head>
+<body >
+<div id="urllist" class="container " style="margin-top:10px">
+	
+	<input id="newUrl"/>
+	<button id="addUrl">添加网站</button>
+	<select>
+		  
+
+	</select>
+<span class="pull-right">联系作者>><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=360692209&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:360692209:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></span>
+
+</div>
+<hr>
+<div class="container">
+<h1 ><span id='url'></span> <a href="" id="check" target='_blank' class="small" style="color:green;margin:20px">网站seo综合查询</a><a href="" id='deletUrl' class="small" style="color:green;margin:20px">从查询列表中删除本站</a></h1>
+
+
+
+<hr>
+<div id="keyWordList">
+<!--
+<p class="p">1,<span class="keyWord">新新贷</span><a href="">修改</a> 排名结果： <span class="num">未查询</span></p>
+<a href="" id="addKeyWord" class="small" style="margin-left:10px;margin-right:-20px">添加关键字</a>
+<p class="p">2,<span class="keyWord">网络贷款</span><a href="">修改</a> 排名结果： <span class="num">未查询</span></p>
+-->
+	<input id="newWord"/>
+	<button id="addKeyWord">添加关键字</button>
+<table class="table table-bordered">
+	    <thead>
+
+          <tr>
+            <th rowspan="2">#</th>
+            <th rowspan="2">关键字</th>
+            <th colspan="10">baidu排名结果<span class="small">（数字表示在前10页共100个自然搜索结果中的排名位置）</span></th>
+
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+        	<td></td>
+        	<td></td>
+        	<td>第1页</td>
+        	<td>第2页</td>
+        	<td>第3页</td>
+        	<td>第4页</td>
+        	<td>第5页</td>
+        	<td>第6页</td>
+        	<td>第7页</td>
+        	<td>第8页</td>
+        	<td>第9页</td>
+        	<td>第10页</td>
+        </tr>
+        </tbody>
+
+</table>
+<button id="getbdinfo">获取百度排名信息</button>
+<form>
+
+</form>
+</div>
+
+<br>
+
+
+<hr>
+
+
+
+<div style="display:none">
+<div id="bd_container"></div>
+<div id="keyWords"></div>
+<div id="hasid"></div>
+</div>
+
+
+</div>
+
+
+
+</body>
+
+
+</html>
