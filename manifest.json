@@ -11,8 +11,16 @@
 		"contextMenus"
 	],
 	
+	"browser_action":{
+		"default_icon":"icon.png"
+	},
 	
-	
+
+	"icons":{
+		"16":"icon-bitty.png"
+		//"48": "icon-small.png",
+        //"128": "icon-large.png"
+	},
 	"background": {
 	    "scripts": ["js/jquery-1.10.2.js","js/sample.js"]
 	  }

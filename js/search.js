@@ -312,6 +312,7 @@ function deletWord(word){
 
 function addUrl(newUrl){
 	localStorage.setItem(newUrl,'{"keyWords":[]}');
+	localStorage.now=newUrl;
 	location.reload();
 	//obj=$.parseJSON(localStorage.url);
 }

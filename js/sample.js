@@ -3,7 +3,10 @@ chrome.contextMenus.create({'title':"本站seo查询(名榜SEO助手)","onclick"
 		    console.log("Got expected error: " + chrome.extension.lastError.message);
 			}
 		});
-
+chrome.browserAction.onClicked.addListener(function(){
+	//alert("hello");
+	browOnclick();
+});
 
 function keyOnclick(){
 
@@ -32,19 +35,25 @@ function keyOnclick(){
 
 
 }
-/*
+function browOnclick(){
 
-function testOnclick(){
+		html = chrome.extension.getURL("../index.html");
+		newtabId=0;
+		oldtabId=1;
+		chrome.tabs.getSelected(null,function(tab){
+			localStorage.now='www.abc.com';
+			oldtabId=tab.id;
+			console.log('oldtabId='+oldtabId);
+			chrome.tabs.create({url:html+'?tabid='+tab.id},function(tab){
+				newtabId=tab.id;
+				console.log('newtabId='+newtabId);
+			});
+			/*
+			chrome.tabs.sendRequest(oldtabId,{url:tab.url},function(response){
+				console.log(oldtabId+' send url ');
+			})
+			*/	
+		});
 
-	//chrome.tabs.executeScript(null,{file: 'openSlider.js'},function(){
-		//alert("hello");
-	//});
-	chrome.tabs.getSelected(null,function(tab){
-		url=tab.url.replace('http://','').replace(/(\/).+/,'');
-		chrome.tabs.create({url:"http://seo.chinaz.com/?host="+url});
-		//alert(url);
-		//console.log(url);
-	});
-	//chrome.tabs.create({url:"http://seo.chinaz.com/"});
+
 }
-*/
