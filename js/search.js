@@ -45,12 +45,6 @@ $().ready(function(){
 
 
 
-	//keyWords=localStorage.keyWords;
-	//keyWords='["新新贷","网络贷款","P2P借贷","投资理财","理财产品","民间借贷","P2P","O2O","无抵押贷款","信贷","网络贷款","网络借贷","企业融资"]';
-	//keyWords='["网络借贷","p2p借贷平台"]';
-	//localStorage.keyWords=keyWords;
-	//objUrl=localStorage.getItem(url);
-	//objUrl='{"keyWords":["网络借贷","p2p借贷平台"]}';
 	
 	keyWords=getKeyWordsFromUrl(nurl);
 
